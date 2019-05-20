@@ -165,7 +165,9 @@ export class BodyRow extends Component {
         let columns = React.Children.toArray(this.props.children);
         let conditionalStyles = {
             'p-highlight': this.props.selected, 
-            'p-highlight-contextmenu': this.props.contextMenuSelected
+            'p-highlight-contextmenu': this.props.contextMenuSelected,
+            /* adding row expanded class  */
+            'p-expanded': this.props.expanded
         };
         
         if(this.props.rowClassName) {
